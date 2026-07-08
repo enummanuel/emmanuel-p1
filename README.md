@@ -10,3 +10,7 @@ This project demonstrates the core relationship between writing raw code and how
 * How to correctly set up a local development directory structure in VS Code.
 * Linking external `.css` style sheets and `.js` scripts to an `index.html` skeleton.
 * Inspecting live web pages using the browser console to verify script execution.
+## 🧠 What I Did & Learned
+* **Initialized Git Locally:** Practiced using `git init`, `git add .`, and `git commit` to stage and track file changes straight from the Code terminal.
+* **Feature Branching:** Created an isolated development environment using `git checkout -b my-feature` to safely work on modifications without disrupting the production-ready `main` branch.
+* **Pull Requests (PR):** Pushed a feature branch up to GitHub and generated a Pull Request to simulate real-world developer team code reviews and collaborative merges.
