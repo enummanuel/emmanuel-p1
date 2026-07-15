@@ -7,25 +7,34 @@
 </head>
 <body>
   <h1>User Information</h1>
+  <form action="">
   <label for="first-name">First Name:</label>
-  <input type="text" id="first-name"><br>
+  <input type="text" id="first-name"><br><br>
+
   <label for="last-name">Last Name:</label>
-  <input type="text" id="last-name"><br>
+  <input type="text" id="last-name"><br><br>
+
   <label for="email">Email:</label>
-  <input type="email" id="email"><br>
+  <input type="email" id="email"><br><br>
+
   <label for="phone-number">Phone Number:</label>
-  <input type="text" id="phone-number"><br>
+  <input type="tel" id="phone-number"><br><br>
+
   <label for="password">Password:</label>
-  <input type="password" id="password"><br>
+  <input type="password" id="password"><br><br>
+
   <label for="confirm-password">Confirm Password:</label>
-  <input type="password" id="password"><br>
+  <input type="password" id="password"><br><br>
+
   <label for="dob">Date of Birth:</label>
-  <input type="date" name="dob" id="dob"><br>
+  <input type="date" name="dob" id="dob"><br><br>
+
   <label for="gender">Gender:</label>
   <input type="radio" id="male" value="male" name="gender">
   <label for="male">Male</label>
   <input type="radio" id="female" value="female" name="gender">
-  <label for="female">Female</label><br>
+  <label for="female">Female</label><br><br>
+
   <label for="country">Country:</label>
   <select name="country" id="country">
     <option value="united-state">United State</option>
@@ -33,9 +42,11 @@
     <option value="nigeria">Nigeria</option>
     <option value="spain">Spain</option>
     <option value="france">France</option>
-  </select><br>
-  <label for="address">Address:</label>
-  <textarea name="address" id="address" rows="5" cols="50"></textarea><br>
+  </select><br><br>
+
+  <label for="address">Address:</label><br>
+  <textarea name="address" id="address" name="address" rows="5" cols="50"></textarea><br><br>
+
   <label for="city">City:</label>
   <select name="city" id="city">
     <option value="new-york">New York</option>
@@ -43,7 +54,8 @@
     <option value="chicago">Chicago</option>
     <option value="houson">Houston</option>
     <option value="phoenix">Phoenix</option>
-  </select><br>
+  </select><br><br>
+
   <label for="state">State:</label>
   <select name="state" id="state">
     <option value="new-york">New York</option>
@@ -51,15 +63,19 @@
     <option value="texas">Texas</option>
     <option value="arizona">Arizona</option>
     <option value="ohio">Ohio</option>
-  </select><br>
+  </select><br><br>
+
   <label for="zip-code">Zip/Postal Code:</label>
-  <input type="text" id="zip-code"><br>
+  <input type="text" id="zip-code"><br><br>
+
   <label for="t-s">Terms and Conditions:</label><br>
   <input type="checkbox" id="first-condition">
   <label for="first-condition">Do you wish to work with us?</label><br>
   <input type="checkbox" id="second-condition">
-  <label for="second-condition">Have you read the term and accepted the conditions?</label><br>
+  <label for="second-condition">Have you read the term and accepted the conditions?</label><br><br>
+
   <button type="submit">Submit</button>
   <button type="reset">Reset</button>
+</form>
 </body>
 </html>
