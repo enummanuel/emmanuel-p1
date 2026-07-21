@@ -4,97 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Emmanuel | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <nav>
-      <strong>John Emmanuel</strong>
-      <ul>
-        <li><a href="#about">About Me</a></li>
+    <nav class="nav">
+      <div class="logo">
+        <strong>John Emmanuel</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <hr>
-
-  <section id="about">
-    <h1>Hi, I'm John Emmanuel</h1>
-    <p>Hi, I am Emmanuel. I am a software engineering student building my tech foundation and learning how to create interactive web applications, I learnt from Outcome School.</p>
-    
-    <h3>Profile Picture</h3>
-    <img src="site-removebg-preview.png" alt="A professional portrait of John Emmanuel" width="300">
-  </section>
-
-  <hr>
-
-  <section id="skills">
-    <h2>Skills I'm Learning</h2>
-    
-    <div>
-      <h3>1. HTML and CSS Code</h3>
-      <p>Mastering semantic structures and layouts to design clean user interfaces.</p>
-      <img src="html.jpg" alt="Lines of colorful HTML markup displayed on a dark monitor screen" width="300">
-    </div>
-
-    <div>
-      <h3>2. JavaScript Code</h3>
-      <p>Learning programming logic and interactivity to bring web pages to life.</p>
-      <img src="java.jpg" alt="JavaScript programming code shown on a glowing computer display" width="300">
+  <section id="about" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="badge">Welcome to my portfolio</span>
+        <h1>Hi, I'm <span class="highlight">John Emmanuel</span></h1>
+        <p>I am a software engineering student building my tech foundation and learning how to create interactive, accessible web applications.</p>
+        <a href="#contact" class="cta-btn">Get In Touch</a>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="site-removebg-preview.png" alt="A professional portrait of John Emmanuel" class="hero-img">
+      </div>
     </div>
   </section>
 
-  <hr>
+  <main class="container">
+    <section id="skills">
+      <h2>Skills I'm Learning</h2>
+      
+      <div class="cards">
+        <article class="card">
+          <h3>1. HTML and CSS Code</h3>
+          <p>Mastering semantic structures and layouts to design clean user interfaces.</p>
+          <img src="html.jpg" width="100%">
+        </article>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    
-    <div>
-      <h3>Project 1: Personal Landing Page</h3>
-      <p>This is my very first webpage built using raw, semantic HTML.</p>
-      <a href="https://github.com">View Code on GitHub</a>
-    </div>
+        <article class="card">
+          <h3>2. JavaScript Code</h3>
+          <p>Learning programming logic and interactivity to bring web pages to life.</p>
+          <img src="java.jpg" width="100%">
+        </article>
+      </div>
+    </section>
 
-    <div>
-      <h3>Project 2: Responsive Article Layout</h3>
-      <p>A simple structured article displaying text, images, and clear headings.</p>
-      <a href="https://github.com">View Code on GitHub</a>
-    </div>
-  </section>
-
-  <hr>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Fill out the form below to get in touch with me!</p>
-
-    <form action="#" method="POST">
-      <p>
-        <label for="user-name">Your Name:</label>
-        <input type="text" id="user-name" name="name" required placeholder="Enter your name">
-      </p>
-
-      <p>
-        <label for="user-email">Email Address:</label>
-        <input type="email" id="user-email" name="email" required placeholder="Enter your email">
-      </p>
-
-      <p>
-        <label for="user-message">Your Message:</label><br>
-        <textarea id="user-message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
-      </p>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <hr>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <p>
+          <label for="user-name">Your Name:</label><br>
+          <input type="text" id="user-name" name="name" required placeholder="Enter your name">
+        </p>
+        <p>
+          <label for="user-email">Email Address:</label><br>
+          <input type="email" id="user-email" name="email" required placeholder="Enter your email">
+        </p>
+        <p>
+          <label for="user-message">Your Message:</label><br>
+          <textarea id="user-message" name="message" rows="4" required placeholder="Type your message here..."></textarea>
+        </p>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2026 John Emmanuel. Built with raw, accessible HTML.</p>
+    <p>&copy; 2026 John Emmanuel. Built with clean, accessible semantic HTML and CSS.</p>
   </footer>
 
 </body>

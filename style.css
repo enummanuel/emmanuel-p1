@@ -8,5 +8,52 @@ body {
 h1 {
     color: #0056b3;
 }
+/* Add: */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex: 15;
+}
+
+.cards {
+display: flex;
+flex-direction: column;
+gap: 45px;
+}
+@media (min-width: 768px) {
+.cards {
+flex-direction: row;
+}
+
+.nav-links {
+    display: none;
+}
+}
+
+.project-card {
+background-color: #ffffff; /* Clean white background container */
+border: 2px solid deeppink; /* Matches your pink color theme accent line */
+border-radius: 8px; /* Gives smooth, rounded corners */
+padding: 20px; /* Generates spacing inside the card */
+margin: 10px 0; /* Generates vertical separation margins */
+text-align: center; /* Centers the text within each box */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Adds a soft visual drop-shadow depth */
+width: 500px;
+}
+
+/* Enhancing the inner text sizing */
+.project-card h3 {
+margin-top: 0;
+color: deeppink; /* Keeps headers consistent with your theme color */
+}
+
+.project-card p {
+color: #4a5568; /* Slightly softer color tone for body text readability */
+font-size: 0.95rem;
+}
 
 
