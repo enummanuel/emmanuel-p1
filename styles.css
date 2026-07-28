@@ -1,0 +1,161 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333333;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+  font-size: 20px;
+  color: #111111;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background-color: #1a202c;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse; 
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #3182ce; 
+}
+
+.hero-content p {
+  color: #cbd5e0;
+  font-size: 16px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #3182ce;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.hero-img {
+  width: 250px;
+  border-radius: 10px;
+  border: 3px solid #3182ce;
+}
+
+.hero-img:hover {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+  
+  transform: translateY(-5px); 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+}
+
+.card img {
+  border-radius: 6px;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3182ce;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row; 
+    justify-content: space-around;
+  }
+
+  .hero-content {
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .cards {
+    flex-direction: row; 
+  }
+}
